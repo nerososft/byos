@@ -2,11 +2,15 @@
 # sudo apt-get install VirtualBox grub-legacy xorriso
 
 GCCPARAMS = -m32 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore
-ASPARAMS = --32 
+ASPARAMS = --32
 LDPARAMS = -melf_i386
 
-objects = loader.o gdt.o port.o kernel.o
+objects = loader.o gdt.o port.o interruptstubs.o interrupts.o kernel.o
 
+
+run: mykernel.iso
+	(killall VirtualBox && sleep 1) || true
+	VirtualBox --startvm 'BYOS' &
 
 %.o: %.cpp
 	gcc $(GCCPARAMS) -c -o $@ $<
@@ -32,12 +36,8 @@ mykernel.iso: mykernel.bin
 	grub-mkrescue --output=mykernel.iso iso
 	rm -rf iso
 
-run: mykernel.iso
-	(killall VirtualBox && sleep 1) || true
-	VirtualBox --startvm 'BYOS' &
-
 install: mykernel.bin
 	sudo cp $< /boot/mykernel.bin
-	
+
 clean:
 	rm -f $(objects) mykernel.bin mykernel.iso
