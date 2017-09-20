@@ -5,6 +5,13 @@
     dataport(0x60),
     commandport(0x64)
     {
+    }
+
+    MouseDriver::~MouseDriver()
+    {
+    }
+    
+    void MouseDriver::Activate(){
         uint16_t* VideoMemory = (uint16_t*)0xb8000;
         offset = 0;
         buttons = 0;
@@ -23,10 +30,6 @@
         commandport.Write(0xD4);
         dataport.Write(0xF4);
         dataport.Read();
-    }
-
-    MouseDriver::~MouseDriver()
-    {
     }
     
     uint32_t MouseDriver::HandleInterrupt(uint32_t esp)
@@ -55,7 +58,7 @@
                 if(y < 0) y = 0;
 
                 VideoMemory[80*y+x] = (VideoMemory[80*y+x] & 0x0F00) << 4
-                                    | (VideoMemory[80*y+x] & 0xF000) >> 4
+                                    | (VideoMemory[80*y+x] & 0xF000) >> 4   
                                     | (VideoMemory[80*y+x] & 0x00FF);
             }
 
