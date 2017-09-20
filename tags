@@ -1,0 +1,312 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Activate	interrupts.cpp	/^void InterruptManager::Activate()$/;"	f	class:InterruptManager	signature:()
+Activate	interrupts.h	/^            void Activate();$/;"	p	class:InterruptManager	access:public	signature:()
+ActiveInterruptManager	interrupts.h	/^            static InterruptManager* ActiveInterruptManager;$/;"	m	class:InterruptManager	access:protected
+Base	gdt.cpp	/^uint32_t GlobalDescriptorTable::SegmentDescriptor::Base()$/;"	f	class:GlobalDescriptorTable::SegmentDescriptor	signature:()
+Base	gdt.h	/^                    uint32_t Base();$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor	access:public	signature:()
+CodeSegmentSelector	gdt.cpp	/^uint16_t GlobalDescriptorTable::CodeSegmentSelector()$/;"	f	class:GlobalDescriptorTable	signature:()
+CodeSegmentSelector	gdt.h	/^            uint16_t CodeSegmentSelector();$/;"	p	class:GlobalDescriptorTable	access:public	signature:()
+DataSegmentSelector	gdt.cpp	/^uint16_t GlobalDescriptorTable::DataSegmentSelector()$/;"	f	class:GlobalDescriptorTable	signature:()
+DataSegmentSelector	gdt.h	/^            uint16_t DataSegmentSelector();$/;"	p	class:GlobalDescriptorTable	access:public	signature:()
+Deactivate	interrupts.cpp	/^void InterruptManager::Deactivate()$/;"	f	class:InterruptManager	signature:()
+Deactivate	interrupts.h	/^            void Deactivate();$/;"	p	class:InterruptManager	access:public	signature:()
+DoHandleInterrupt	interrupts.h	/^            uint32_t DoHandleInterrupt(uint16_t interruptNumber,uint32_t esp);$/;"	p	class:InterruptManager	access:public	signature:(uint16_t interruptNumber,uint32_t esp)
+GateDescriptor	interrupts.h	/^            struct GateDescriptor$/;"	s	class:InterruptManager	access:protected
+GlobalDescriptorTable	gdt.cpp	/^GlobalDescriptorTable::GlobalDescriptorTable()$/;"	f	class:GlobalDescriptorTable	signature:()
+GlobalDescriptorTable	gdt.h	/^            GlobalDescriptorTable();$/;"	p	class:GlobalDescriptorTable	access:public	signature:()
+GlobalDescriptorTable	gdt.h	/^    class GlobalDescriptorTable$/;"	c
+GlobalDescriptorTable::CodeSegmentSelector	gdt.cpp	/^uint16_t GlobalDescriptorTable::CodeSegmentSelector()$/;"	f	class:GlobalDescriptorTable	signature:()
+GlobalDescriptorTable::CodeSegmentSelector	gdt.h	/^            uint16_t CodeSegmentSelector();$/;"	p	class:GlobalDescriptorTable	access:public	signature:()
+GlobalDescriptorTable::DataSegmentSelector	gdt.cpp	/^uint16_t GlobalDescriptorTable::DataSegmentSelector()$/;"	f	class:GlobalDescriptorTable	signature:()
+GlobalDescriptorTable::DataSegmentSelector	gdt.h	/^            uint16_t DataSegmentSelector();$/;"	p	class:GlobalDescriptorTable	access:public	signature:()
+GlobalDescriptorTable::GlobalDescriptorTable	gdt.cpp	/^GlobalDescriptorTable::GlobalDescriptorTable()$/;"	f	class:GlobalDescriptorTable	signature:()
+GlobalDescriptorTable::GlobalDescriptorTable	gdt.h	/^            GlobalDescriptorTable();$/;"	p	class:GlobalDescriptorTable	access:public	signature:()
+GlobalDescriptorTable::SegmentDescriptor	gdt.h	/^            class SegmentDescriptor$/;"	c	class:GlobalDescriptorTable	access:public
+GlobalDescriptorTable::SegmentDescriptor::Base	gdt.cpp	/^uint32_t GlobalDescriptorTable::SegmentDescriptor::Base()$/;"	f	class:GlobalDescriptorTable::SegmentDescriptor	signature:()
+GlobalDescriptorTable::SegmentDescriptor::Base	gdt.h	/^                    uint32_t Base();$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor	access:public	signature:()
+GlobalDescriptorTable::SegmentDescriptor::Limit	gdt.cpp	/^uint32_t GlobalDescriptorTable::SegmentDescriptor::Limit()$/;"	f	class:GlobalDescriptorTable::SegmentDescriptor	signature:()
+GlobalDescriptorTable::SegmentDescriptor::Limit	gdt.h	/^                    uint32_t Limit();$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor	access:public	signature:()
+GlobalDescriptorTable::SegmentDescriptor::SegmentDescriptor	gdt.cpp	/^GlobalDescriptorTable::SegmentDescriptor::SegmentDescriptor(uint32_t base, uint32_t limit, uint8_t type)$/;"	f	class:GlobalDescriptorTable::SegmentDescriptor	signature:(uint32_t base, uint32_t limit, uint8_t type)
+GlobalDescriptorTable::SegmentDescriptor::SegmentDescriptor	gdt.h	/^                    SegmentDescriptor(uint32_t base, uint32_t limit, uint8_t type);$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor	access:public	signature:(uint32_t base, uint32_t limit, uint8_t type)
+GlobalDescriptorTable::SegmentDescriptor::base_hi	gdt.h	/^                    uint8_t base_hi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+GlobalDescriptorTable::SegmentDescriptor::base_lo	gdt.h	/^                    uint16_t base_lo;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+GlobalDescriptorTable::SegmentDescriptor::base_vhi	gdt.h	/^                    uint8_t base_vhi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+GlobalDescriptorTable::SegmentDescriptor::limit_hi	gdt.h	/^                    uint8_t limit_hi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+GlobalDescriptorTable::SegmentDescriptor::limit_lo	gdt.h	/^                    uint16_t limit_lo;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+GlobalDescriptorTable::SegmentDescriptor::type	gdt.h	/^                    uint8_t type;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+GlobalDescriptorTable::codeSegmentSelector	gdt.h	/^            SegmentDescriptor codeSegmentSelector;$/;"	m	class:GlobalDescriptorTable	access:private
+GlobalDescriptorTable::dataSegmentSelector	gdt.h	/^            SegmentDescriptor dataSegmentSelector;$/;"	m	class:GlobalDescriptorTable	access:private
+GlobalDescriptorTable::nullSegmentSelector	gdt.h	/^            SegmentDescriptor nullSegmentSelector;$/;"	m	class:GlobalDescriptorTable	access:private
+GlobalDescriptorTable::unusedSegmentSelector	gdt.h	/^            SegmentDescriptor unusedSegmentSelector;$/;"	m	class:GlobalDescriptorTable	access:private
+GlobalDescriptorTable::~GlobalDescriptorTable	gdt.cpp	/^GlobalDescriptorTable::~GlobalDescriptorTable()$/;"	f	class:GlobalDescriptorTable	signature:()
+GlobalDescriptorTable::~GlobalDescriptorTable	gdt.h	/^            ~GlobalDescriptorTable();$/;"	p	class:GlobalDescriptorTable	access:public	signature:()
+HandleException0x00	interrupts.h	/^            static void HandleException0x00();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x01	interrupts.h	/^            static void HandleException0x01();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x02	interrupts.h	/^            static void HandleException0x02();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x03	interrupts.h	/^            static void HandleException0x03();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x04	interrupts.h	/^            static void HandleException0x04();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x05	interrupts.h	/^            static void HandleException0x05();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x06	interrupts.h	/^            static void HandleException0x06();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x07	interrupts.h	/^            static void HandleException0x07();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x08	interrupts.h	/^            static void HandleException0x08();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x09	interrupts.h	/^            static void HandleException0x09();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x0A	interrupts.h	/^            static void HandleException0x0A();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x0B	interrupts.h	/^            static void HandleException0x0B();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x0C	interrupts.h	/^            static void HandleException0x0C();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x0D	interrupts.h	/^            static void HandleException0x0D();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x0E	interrupts.h	/^            static void HandleException0x0E();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x0F	interrupts.h	/^            static void HandleException0x0F();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x10	interrupts.h	/^            static void HandleException0x10();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x11	interrupts.h	/^            static void HandleException0x11();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x12	interrupts.h	/^            static void HandleException0x12();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleException0x13	interrupts.h	/^            static void HandleException0x13();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterrupt	interrupts.cpp	/^uint32_t InterruptManager::HandleInterrupt(uint8_t interrupt, uint32_t esp)$/;"	f	class:InterruptManager	signature:(uint8_t interrupt, uint32_t esp)
+HandleInterrupt	interrupts.h	/^            static uint32_t HandleInterrupt(uint8_t interrupt, uint32_t esp);$/;"	p	class:InterruptManager	access:protected	signature:(uint8_t interrupt, uint32_t esp)
+HandleInterruptRequest0x00	interrupts.h	/^            static void HandleInterruptRequest0x00();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x01	interrupts.h	/^            static void HandleInterruptRequest0x01();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x02	interrupts.h	/^            static void HandleInterruptRequest0x02();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x03	interrupts.h	/^            static void HandleInterruptRequest0x03();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x04	interrupts.h	/^            static void HandleInterruptRequest0x04();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x05	interrupts.h	/^            static void HandleInterruptRequest0x05();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x06	interrupts.h	/^            static void HandleInterruptRequest0x06();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x07	interrupts.h	/^            static void HandleInterruptRequest0x07();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x08	interrupts.h	/^            static void HandleInterruptRequest0x08();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x09	interrupts.h	/^            static void HandleInterruptRequest0x09();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x0A	interrupts.h	/^            static void HandleInterruptRequest0x0A();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x0B	interrupts.h	/^            static void HandleInterruptRequest0x0B();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x0C	interrupts.h	/^            static void HandleInterruptRequest0x0C();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x0D	interrupts.h	/^            static void HandleInterruptRequest0x0D();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x0E	interrupts.h	/^            static void HandleInterruptRequest0x0E();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x0F	interrupts.h	/^            static void HandleInterruptRequest0x0F();$/;"	p	class:InterruptManager	access:protected	signature:()
+HandleInterruptRequest0x31	interrupts.h	/^            static void HandleInterruptRequest0x31();$/;"	p	class:InterruptManager	access:protected	signature:()
+HardwareInterruptOffset	interrupts.cpp	/^uint16_t InterruptManager::HardwareInterruptOffset()$/;"	f	class:InterruptManager	signature:()
+HardwareInterruptOffset	interrupts.h	/^            uint16_t HardwareInterruptOffset();$/;"	p	class:InterruptManager	access:public	signature:()
+IRQ_BASE	interruptstubs.s	/^    movb $\\num + IRQ_BASE, (interruptnumber)$/;"	v
+InterruptDescriptorTablePointer	interrupts.h	/^            struct InterruptDescriptorTablePointer$/;"	s	class:InterruptManager	access:protected
+InterruptIgnore	interrupts.h	/^            static void InterruptIgnore();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager	interrupts.cpp	/^InterruptManager::InterruptManager(uint16_t hardwareInterruptOffset, GlobalDescriptorTable* globalDescriptorTable)$/;"	f	class:InterruptManager	signature:(uint16_t hardwareInterruptOffset, GlobalDescriptorTable* globalDescriptorTable)
+InterruptManager	interrupts.h	/^            InterruptManager(uint16_t hardwareInterruptOffset, GlobalDescriptorTable* globalDescriptorTable);$/;"	p	class:InterruptManager	access:public	signature:(uint16_t hardwareInterruptOffset, GlobalDescriptorTable* globalDescriptorTable)
+InterruptManager	interrupts.h	/^    class InterruptManager$/;"	c
+InterruptManager::Activate	interrupts.cpp	/^void InterruptManager::Activate()$/;"	f	class:InterruptManager	signature:()
+InterruptManager::Activate	interrupts.h	/^            void Activate();$/;"	p	class:InterruptManager	access:public	signature:()
+InterruptManager::ActiveInterruptManager	interrupts.h	/^            static InterruptManager* ActiveInterruptManager;$/;"	m	class:InterruptManager	access:protected
+InterruptManager::Deactivate	interrupts.cpp	/^void InterruptManager::Deactivate()$/;"	f	class:InterruptManager	signature:()
+InterruptManager::Deactivate	interrupts.h	/^            void Deactivate();$/;"	p	class:InterruptManager	access:public	signature:()
+InterruptManager::DoHandleInterrupt	interrupts.h	/^            uint32_t DoHandleInterrupt(uint16_t interruptNumber,uint32_t esp);$/;"	p	class:InterruptManager	access:public	signature:(uint16_t interruptNumber,uint32_t esp)
+InterruptManager::GateDescriptor	interrupts.h	/^            struct GateDescriptor$/;"	s	class:InterruptManager	access:protected
+InterruptManager::GateDescriptor::access	interrupts.h	/^                uint8_t access;$/;"	m	struct:InterruptManager::GateDescriptor	access:public
+InterruptManager::GateDescriptor::gdt_codeSegmentSelector	interrupts.h	/^                uint16_t gdt_codeSegmentSelector;$/;"	m	struct:InterruptManager::GateDescriptor	access:public
+InterruptManager::GateDescriptor::handlerAddressHighBits	interrupts.h	/^                uint16_t handlerAddressHighBits;$/;"	m	struct:InterruptManager::GateDescriptor	access:public
+InterruptManager::GateDescriptor::handlerAddressLowBits	interrupts.h	/^                uint16_t handlerAddressLowBits;$/;"	m	struct:InterruptManager::GateDescriptor	access:public
+InterruptManager::GateDescriptor::reserved	interrupts.h	/^                uint8_t reserved;$/;"	m	struct:InterruptManager::GateDescriptor	access:public
+InterruptManager::HandleException0x00	interrupts.h	/^            static void HandleException0x00();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x01	interrupts.h	/^            static void HandleException0x01();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x02	interrupts.h	/^            static void HandleException0x02();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x03	interrupts.h	/^            static void HandleException0x03();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x04	interrupts.h	/^            static void HandleException0x04();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x05	interrupts.h	/^            static void HandleException0x05();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x06	interrupts.h	/^            static void HandleException0x06();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x07	interrupts.h	/^            static void HandleException0x07();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x08	interrupts.h	/^            static void HandleException0x08();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x09	interrupts.h	/^            static void HandleException0x09();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x0A	interrupts.h	/^            static void HandleException0x0A();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x0B	interrupts.h	/^            static void HandleException0x0B();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x0C	interrupts.h	/^            static void HandleException0x0C();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x0D	interrupts.h	/^            static void HandleException0x0D();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x0E	interrupts.h	/^            static void HandleException0x0E();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x0F	interrupts.h	/^            static void HandleException0x0F();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x10	interrupts.h	/^            static void HandleException0x10();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x11	interrupts.h	/^            static void HandleException0x11();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x12	interrupts.h	/^            static void HandleException0x12();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleException0x13	interrupts.h	/^            static void HandleException0x13();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterrupt	interrupts.cpp	/^uint32_t InterruptManager::HandleInterrupt(uint8_t interrupt, uint32_t esp)$/;"	f	class:InterruptManager	signature:(uint8_t interrupt, uint32_t esp)
+InterruptManager::HandleInterrupt	interrupts.h	/^            static uint32_t HandleInterrupt(uint8_t interrupt, uint32_t esp);$/;"	p	class:InterruptManager	access:protected	signature:(uint8_t interrupt, uint32_t esp)
+InterruptManager::HandleInterruptRequest0x00	interrupts.h	/^            static void HandleInterruptRequest0x00();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x01	interrupts.h	/^            static void HandleInterruptRequest0x01();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x02	interrupts.h	/^            static void HandleInterruptRequest0x02();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x03	interrupts.h	/^            static void HandleInterruptRequest0x03();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x04	interrupts.h	/^            static void HandleInterruptRequest0x04();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x05	interrupts.h	/^            static void HandleInterruptRequest0x05();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x06	interrupts.h	/^            static void HandleInterruptRequest0x06();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x07	interrupts.h	/^            static void HandleInterruptRequest0x07();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x08	interrupts.h	/^            static void HandleInterruptRequest0x08();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x09	interrupts.h	/^            static void HandleInterruptRequest0x09();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x0A	interrupts.h	/^            static void HandleInterruptRequest0x0A();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x0B	interrupts.h	/^            static void HandleInterruptRequest0x0B();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x0C	interrupts.h	/^            static void HandleInterruptRequest0x0C();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x0D	interrupts.h	/^            static void HandleInterruptRequest0x0D();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x0E	interrupts.h	/^            static void HandleInterruptRequest0x0E();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x0F	interrupts.h	/^            static void HandleInterruptRequest0x0F();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HandleInterruptRequest0x31	interrupts.h	/^            static void HandleInterruptRequest0x31();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::HardwareInterruptOffset	interrupts.cpp	/^uint16_t InterruptManager::HardwareInterruptOffset()$/;"	f	class:InterruptManager	signature:()
+InterruptManager::HardwareInterruptOffset	interrupts.h	/^            uint16_t HardwareInterruptOffset();$/;"	p	class:InterruptManager	access:public	signature:()
+InterruptManager::InterruptDescriptorTablePointer	interrupts.h	/^            struct InterruptDescriptorTablePointer$/;"	s	class:InterruptManager	access:protected
+InterruptManager::InterruptDescriptorTablePointer::base	interrupts.h	/^                uint32_t base;$/;"	m	struct:InterruptManager::InterruptDescriptorTablePointer	access:public
+InterruptManager::InterruptDescriptorTablePointer::size	interrupts.h	/^                uint16_t size;$/;"	m	struct:InterruptManager::InterruptDescriptorTablePointer	access:public
+InterruptManager::InterruptIgnore	interrupts.h	/^            static void InterruptIgnore();$/;"	p	class:InterruptManager	access:protected	signature:()
+InterruptManager::InterruptManager	interrupts.cpp	/^InterruptManager::InterruptManager(uint16_t hardwareInterruptOffset, GlobalDescriptorTable* globalDescriptorTable)$/;"	f	class:InterruptManager	signature:(uint16_t hardwareInterruptOffset, GlobalDescriptorTable* globalDescriptorTable)
+InterruptManager::InterruptManager	interrupts.h	/^            InterruptManager(uint16_t hardwareInterruptOffset, GlobalDescriptorTable* globalDescriptorTable);$/;"	p	class:InterruptManager	access:public	signature:(uint16_t hardwareInterruptOffset, GlobalDescriptorTable* globalDescriptorTable)
+InterruptManager::SetInterruptDescriptorTableEntry	interrupts.cpp	/^void InterruptManager::SetInterruptDescriptorTableEntry(uint8_t interrupt,$/;"	f	class:InterruptManager	signature:(uint8_t interrupt, uint16_t CodeSegment, void (*handler)(), uint8_t DescriptorPrivilegeLevel, uint8_t DescriptorType)
+InterruptManager::SetInterruptDescriptorTableEntry	interrupts.h	/^            static void SetInterruptDescriptorTableEntry(uint8_t interrupt,$/;"	p	class:InterruptManager	access:protected	signature:(uint8_t interrupt, uint16_t codeSegmentSelectorOffset, void (*handler)(), uint8_t DescriptorPrivilegeLevel, uint8_t DescriptorType)
+InterruptManager::hardwareInterruptOffset	interrupts.h	/^            uint16_t hardwareInterruptOffset;$/;"	m	class:InterruptManager	access:protected
+InterruptManager::interruptDescriptorTable	interrupts.cpp	/^InterruptManager::GateDescriptor InterruptManager::interruptDescriptorTable[256];$/;"	m	class:InterruptManager	file:
+InterruptManager::interruptDescriptorTable	interrupts.h	/^            static GateDescriptor interruptDescriptorTable[256];$/;"	m	class:InterruptManager	access:protected
+InterruptManager::programmableInterruptControllerMasterCommandPort	interrupts.h	/^            Port8BitSlow programmableInterruptControllerMasterCommandPort;$/;"	m	class:InterruptManager	access:protected
+InterruptManager::programmableInterruptControllerMasterDataPort	interrupts.h	/^            Port8BitSlow programmableInterruptControllerMasterDataPort;$/;"	m	class:InterruptManager	access:protected
+InterruptManager::programmableInterruptControllerSlaveCommandPort	interrupts.h	/^            Port8BitSlow programmableInterruptControllerSlaveCommandPort;$/;"	m	class:InterruptManager	access:protected
+InterruptManager::programmableInterruptControllerSlaveDataPort	interrupts.h	/^            Port8BitSlow programmableInterruptControllerSlaveDataPort;$/;"	m	class:InterruptManager	access:protected
+InterruptManager::~InterruptManager	interrupts.cpp	/^InterruptManager::~InterruptManager()$/;"	f	class:InterruptManager	signature:()
+InterruptManager::~InterruptManager	interrupts.h	/^            ~InterruptManager();$/;"	p	class:InterruptManager	access:public	signature:()
+Limit	gdt.cpp	/^uint32_t GlobalDescriptorTable::SegmentDescriptor::Limit()$/;"	f	class:GlobalDescriptorTable::SegmentDescriptor	signature:()
+Limit	gdt.h	/^                    uint32_t Limit();$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor	access:public	signature:()
+MY	gdt	/^„MY/;"	v
+MY	gdt	/^ÏMY/;"	v
+Port	port.cpp	/^Port::Port(uint16_t portnumber)$/;"	f	class:Port	signature:(uint16_t portnumber)
+Port	port.h	/^            Port(uint16_t portnumber);$/;"	p	class:Port	access:protected	signature:(uint16_t portnumber)
+Port	port.h	/^    class Port$/;"	c
+Port16Bit	port.cpp	/^Port16Bit::Port16Bit(uint16_t portnumber)$/;"	f	class:Port16Bit	signature:(uint16_t portnumber)
+Port16Bit	port.h	/^            Port16Bit(uint16_t portnumber);$/;"	p	class:Port16Bit	access:public	signature:(uint16_t portnumber)
+Port16Bit	port.h	/^    class Port16Bit : public Port$/;"	c	inherits:Port
+Port16Bit::Port16Bit	port.cpp	/^Port16Bit::Port16Bit(uint16_t portnumber)$/;"	f	class:Port16Bit	signature:(uint16_t portnumber)
+Port16Bit::Port16Bit	port.h	/^            Port16Bit(uint16_t portnumber);$/;"	p	class:Port16Bit	access:public	signature:(uint16_t portnumber)
+Port16Bit::Read	port.cpp	/^uint16_t Port16Bit::Read()$/;"	f	class:Port16Bit	signature:()
+Port16Bit::Read	port.h	/^            virtual uint16_t Read();$/;"	p	class:Port16Bit	access:public	signature:()
+Port16Bit::Read16	port.h	/^            static inline uint16_t Read16(uint16_t _port)$/;"	f	class:Port16Bit	access:protected	signature:(uint16_t _port)
+Port16Bit::Write	port.cpp	/^void Port16Bit::Write(uint16_t data)$/;"	f	class:Port16Bit	signature:(uint16_t data)
+Port16Bit::Write	port.h	/^            virtual void Write(uint16_t data);$/;"	p	class:Port16Bit	access:public	signature:(uint16_t data)
+Port16Bit::Write16	port.h	/^            static inline void Write16(uint16_t _port, uint16_t _data)$/;"	f	class:Port16Bit	access:protected	signature:(uint16_t _port, uint16_t _data)
+Port16Bit::~Port16Bit	port.cpp	/^Port16Bit::~Port16Bit()$/;"	f	class:Port16Bit	signature:()
+Port16Bit::~Port16Bit	port.h	/^            ~Port16Bit();$/;"	p	class:Port16Bit	access:public	signature:()
+Port32Bit	port.cpp	/^Port32Bit::Port32Bit(uint16_t portnumber)$/;"	f	class:Port32Bit	signature:(uint16_t portnumber)
+Port32Bit	port.h	/^            Port32Bit(uint16_t portnumber);$/;"	p	class:Port32Bit	access:public	signature:(uint16_t portnumber)
+Port32Bit	port.h	/^    class Port32Bit : public Port$/;"	c	inherits:Port
+Port32Bit::Port32Bit	port.cpp	/^Port32Bit::Port32Bit(uint16_t portnumber)$/;"	f	class:Port32Bit	signature:(uint16_t portnumber)
+Port32Bit::Port32Bit	port.h	/^            Port32Bit(uint16_t portnumber);$/;"	p	class:Port32Bit	access:public	signature:(uint16_t portnumber)
+Port32Bit::Read	port.cpp	/^uint32_t Port32Bit::Read()$/;"	f	class:Port32Bit	signature:()
+Port32Bit::Read	port.h	/^            virtual uint32_t Read();$/;"	p	class:Port32Bit	access:public	signature:()
+Port32Bit::Read32	port.h	/^            static inline uint32_t Read32(uint16_t _port)$/;"	f	class:Port32Bit	access:protected	signature:(uint16_t _port)
+Port32Bit::Write	port.cpp	/^void Port32Bit::Write(uint32_t data)$/;"	f	class:Port32Bit	signature:(uint32_t data)
+Port32Bit::Write	port.h	/^            virtual void Write(uint32_t data);$/;"	p	class:Port32Bit	access:public	signature:(uint32_t data)
+Port32Bit::Write32	port.h	/^            static inline void Write32(uint16_t _port, uint32_t _data)$/;"	f	class:Port32Bit	access:protected	signature:(uint16_t _port, uint32_t _data)
+Port32Bit::~Port32Bit	port.cpp	/^Port32Bit::~Port32Bit()$/;"	f	class:Port32Bit	signature:()
+Port32Bit::~Port32Bit	port.h	/^            ~Port32Bit();$/;"	p	class:Port32Bit	access:public	signature:()
+Port8Bit	port.cpp	/^Port8Bit::Port8Bit(uint16_t portnumber)$/;"	f	class:Port8Bit	signature:(uint16_t portnumber)
+Port8Bit	port.h	/^            Port8Bit(uint16_t portnumber);$/;"	p	class:Port8Bit	access:public	signature:(uint16_t portnumber)
+Port8Bit	port.h	/^    class Port8Bit : public Port$/;"	c	inherits:Port
+Port8Bit::Port8Bit	port.cpp	/^Port8Bit::Port8Bit(uint16_t portnumber)$/;"	f	class:Port8Bit	signature:(uint16_t portnumber)
+Port8Bit::Port8Bit	port.h	/^            Port8Bit(uint16_t portnumber);$/;"	p	class:Port8Bit	access:public	signature:(uint16_t portnumber)
+Port8Bit::Read	port.cpp	/^uint8_t Port8Bit::Read()$/;"	f	class:Port8Bit	signature:()
+Port8Bit::Read	port.h	/^            virtual uint8_t Read();$/;"	p	class:Port8Bit	access:public	signature:()
+Port8Bit::Read8	port.h	/^            static inline uint8_t Read8(uint16_t _port)$/;"	f	class:Port8Bit	access:protected	signature:(uint16_t _port)
+Port8Bit::Write	port.cpp	/^void Port8Bit::Write(uint8_t data)$/;"	f	class:Port8Bit	signature:(uint8_t data)
+Port8Bit::Write	port.h	/^            virtual void Write(uint8_t data);$/;"	p	class:Port8Bit	access:public	signature:(uint8_t data)
+Port8Bit::Write8	port.h	/^            static inline void Write8(uint16_t _port, uint8_t _data)$/;"	f	class:Port8Bit	access:protected	signature:(uint16_t _port, uint8_t _data)
+Port8Bit::~Port8Bit	port.cpp	/^Port8Bit::~Port8Bit()$/;"	f	class:Port8Bit	signature:()
+Port8Bit::~Port8Bit	port.h	/^            ~Port8Bit();$/;"	p	class:Port8Bit	access:public	signature:()
+Port8BitSlow	port.cpp	/^Port8BitSlow::Port8BitSlow(uint16_t portnumber)$/;"	f	class:Port8BitSlow	signature:(uint16_t portnumber)
+Port8BitSlow	port.h	/^            Port8BitSlow(uint16_t portnumber);$/;"	p	class:Port8BitSlow	access:public	signature:(uint16_t portnumber)
+Port8BitSlow	port.h	/^    class Port8BitSlow : public Port8Bit$/;"	c	inherits:Port8Bit
+Port8BitSlow::Port8BitSlow	port.cpp	/^Port8BitSlow::Port8BitSlow(uint16_t portnumber)$/;"	f	class:Port8BitSlow	signature:(uint16_t portnumber)
+Port8BitSlow::Port8BitSlow	port.h	/^            Port8BitSlow(uint16_t portnumber);$/;"	p	class:Port8BitSlow	access:public	signature:(uint16_t portnumber)
+Port8BitSlow::Write	port.cpp	/^void Port8BitSlow::Write(uint8_t data)$/;"	f	class:Port8BitSlow	signature:(uint8_t data)
+Port8BitSlow::Write	port.h	/^            virtual void Write(uint8_t data);$/;"	p	class:Port8BitSlow	access:public	signature:(uint8_t data)
+Port8BitSlow::Write8Slow	port.h	/^            static inline void Write8Slow(uint16_t _port, uint8_t _data)$/;"	f	class:Port8BitSlow	access:protected	signature:(uint16_t _port, uint8_t _data)
+Port8BitSlow::~Port8BitSlow	port.cpp	/^Port8BitSlow::~Port8BitSlow()$/;"	f	class:Port8BitSlow	signature:()
+Port8BitSlow::~Port8BitSlow	port.h	/^            ~Port8BitSlow();$/;"	p	class:Port8BitSlow	access:public	signature:()
+Port::Port	port.cpp	/^Port::Port(uint16_t portnumber)$/;"	f	class:Port	signature:(uint16_t portnumber)
+Port::Port	port.h	/^            Port(uint16_t portnumber);$/;"	p	class:Port	access:protected	signature:(uint16_t portnumber)
+Port::portnumber	port.h	/^            uint16_t portnumber;$/;"	m	class:Port	access:protected
+Port::~Port	port.cpp	/^Port::~Port()$/;"	f	class:Port	signature:()
+Port::~Port	port.h	/^            ~Port();$/;"	p	class:Port	access:protected	signature:()
+Read	port.cpp	/^uint16_t Port16Bit::Read()$/;"	f	class:Port16Bit	signature:()
+Read	port.cpp	/^uint32_t Port32Bit::Read()$/;"	f	class:Port32Bit	signature:()
+Read	port.cpp	/^uint8_t Port8Bit::Read()$/;"	f	class:Port8Bit	signature:()
+Read	port.h	/^            virtual uint16_t Read();$/;"	p	class:Port16Bit	access:public	signature:()
+Read	port.h	/^            virtual uint32_t Read();$/;"	p	class:Port32Bit	access:public	signature:()
+Read	port.h	/^            virtual uint8_t Read();$/;"	p	class:Port8Bit	access:public	signature:()
+Read16	port.h	/^            static inline uint16_t Read16(uint16_t _port)$/;"	f	class:Port16Bit	access:protected	signature:(uint16_t _port)
+Read32	port.h	/^            static inline uint32_t Read32(uint16_t _port)$/;"	f	class:Port32Bit	access:protected	signature:(uint16_t _port)
+Read8	port.h	/^            static inline uint8_t Read8(uint16_t _port)$/;"	f	class:Port8Bit	access:protected	signature:(uint16_t _port)
+SegmentDescriptor	gdt.cpp	/^GlobalDescriptorTable::SegmentDescriptor::SegmentDescriptor(uint32_t base, uint32_t limit, uint8_t type)$/;"	f	class:GlobalDescriptorTable::SegmentDescriptor	signature:(uint32_t base, uint32_t limit, uint8_t type)
+SegmentDescriptor	gdt.h	/^                    SegmentDescriptor(uint32_t base, uint32_t limit, uint8_t type);$/;"	p	class:GlobalDescriptorTable::SegmentDescriptor	access:public	signature:(uint32_t base, uint32_t limit, uint8_t type)
+SegmentDescriptor	gdt.h	/^            class SegmentDescriptor$/;"	c	class:GlobalDescriptorTable	access:public
+SetInterruptDescriptorTableEntry	interrupts.cpp	/^void InterruptManager::SetInterruptDescriptorTableEntry(uint8_t interrupt,$/;"	f	class:InterruptManager	signature:(uint8_t interrupt, uint16_t CodeSegment, void (*handler)(), uint8_t DescriptorPrivilegeLevel, uint8_t DescriptorType)
+SetInterruptDescriptorTableEntry	interrupts.h	/^            static void SetInterruptDescriptorTableEntry(uint8_t interrupt,$/;"	p	class:InterruptManager	access:protected	signature:(uint8_t interrupt, uint16_t codeSegmentSelectorOffset, void (*handler)(), uint8_t DescriptorPrivilegeLevel, uint8_t DescriptorType)
+TB	gdt	/^gpch+014√˝∏!TBÍ˘‚,Ö2Zç/;"	v
+Write	port.cpp	/^void Port16Bit::Write(uint16_t data)$/;"	f	class:Port16Bit	signature:(uint16_t data)
+Write	port.cpp	/^void Port32Bit::Write(uint32_t data)$/;"	f	class:Port32Bit	signature:(uint32_t data)
+Write	port.cpp	/^void Port8Bit::Write(uint8_t data)$/;"	f	class:Port8Bit	signature:(uint8_t data)
+Write	port.cpp	/^void Port8BitSlow::Write(uint8_t data)$/;"	f	class:Port8BitSlow	signature:(uint8_t data)
+Write	port.h	/^            virtual void Write(uint16_t data);$/;"	p	class:Port16Bit	access:public	signature:(uint16_t data)
+Write	port.h	/^            virtual void Write(uint32_t data);$/;"	p	class:Port32Bit	access:public	signature:(uint32_t data)
+Write	port.h	/^            virtual void Write(uint8_t data);$/;"	p	class:Port8Bit	access:public	signature:(uint8_t data)
+Write	port.h	/^            virtual void Write(uint8_t data);$/;"	p	class:Port8BitSlow	access:public	signature:(uint8_t data)
+Write16	port.h	/^            static inline void Write16(uint16_t _port, uint16_t _data)$/;"	f	class:Port16Bit	access:protected	signature:(uint16_t _port, uint16_t _data)
+Write32	port.h	/^            static inline void Write32(uint16_t _port, uint32_t _data)$/;"	f	class:Port32Bit	access:protected	signature:(uint16_t _port, uint32_t _data)
+Write8	port.h	/^            static inline void Write8(uint16_t _port, uint8_t _data)$/;"	f	class:Port8Bit	access:protected	signature:(uint16_t _port, uint8_t _data)
+Write8Slow	port.h	/^            static inline void Write8Slow(uint16_t _port, uint8_t _data)$/;"	f	class:Port8BitSlow	access:protected	signature:(uint16_t _port, uint8_t _data)
+__GDT_H	gdt.h	2;"	d
+__INTERRUPTMANAGER_H	interrupts.h	2;"	d
+__PORT_H	port.h	2;"	d
+__TYPES_H	types.h	2;"	d
+access	interrupts.h	/^                uint8_t access;$/;"	m	struct:InterruptManager::GateDescriptor	access:public
+base	interrupts.h	/^                uint32_t base;$/;"	m	struct:InterruptManager::InterruptDescriptorTablePointer	access:public
+base_hi	gdt.h	/^                    uint8_t base_hi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+base_lo	gdt.h	/^                    uint16_t base_lo;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+base_vhi	gdt.h	/^                    uint8_t base_vhi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+callConstructors	kernel.cpp	/^extern "C" void callConstructors()$/;"	f	signature:()
+codeSegmentSelector	gdt.h	/^            SegmentDescriptor codeSegmentSelector;$/;"	m	class:GlobalDescriptorTable	access:private
+constructor	kernel.cpp	/^typedef void (*constructor)();$/;"	t	file:
+dataSegmentSelector	gdt.h	/^            SegmentDescriptor dataSegmentSelector;$/;"	m	class:GlobalDescriptorTable	access:private
+eax	interruptstubs.s	/^    mov %eax, %esp # den stack wechseln$/;"	v
+esp	interruptstubs.s	/^    add %esp, 6$/;"	v
+format	tags	/^!_TAG_FILE_FORMAT	2	\/extended format; --format=1 will not append ;" to lines\/$/;"	v
+gdt_codeSegmentSelector	interrupts.h	/^                uint16_t gdt_codeSegmentSelector;$/;"	m	struct:InterruptManager::GateDescriptor	access:public
+handlerAddressHighBits	interrupts.h	/^                uint16_t handlerAddressHighBits;$/;"	m	struct:InterruptManager::GateDescriptor	access:public
+handlerAddressLowBits	interrupts.h	/^                uint16_t handlerAddressLowBits;$/;"	m	struct:InterruptManager::GateDescriptor	access:public
+hardwareInterruptOffset	interrupts.h	/^            uint16_t hardwareInterruptOffset;$/;"	m	class:InterruptManager	access:protected
+int16_t	types.h	/^    typedef short                   int16_t;$/;"	t
+int32_t	types.h	/^    typedef int                     int32_t;$/;"	t
+int64_t	types.h	/^    typedef long long int           int64_t;$/;"	t
+int8_t	types.h	/^    typedef char                     int8_t;$/;"	t
+interruptDescriptorTable	interrupts.cpp	/^InterruptManager::GateDescriptor InterruptManager::interruptDescriptorTable[256];$/;"	m	class:InterruptManager	file:
+interruptDescriptorTable	interrupts.h	/^            static GateDescriptor interruptDescriptorTable[256];$/;"	m	class:InterruptManager	access:protected
+kernelMain	kernel.cpp	/^extern "C" void kernelMain(const void* multiboot_structure, uint32_t \/*multiboot_magic*\/)$/;"	f	signature:(const void* multiboot_structure, uint32_t )
+limit_hi	gdt.h	/^                    uint8_t limit_hi;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+limit_lo	gdt.h	/^                    uint16_t limit_lo;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+nullSegmentSelector	gdt.h	/^            SegmentDescriptor nullSegmentSelector;$/;"	m	class:GlobalDescriptorTable	access:private
+num	interruptstubs.s	/^    movb $\\num, (interruptnumber)$/;"	v
+portnumber	port.h	/^            uint16_t portnumber;$/;"	m	class:Port	access:protected
+printf	interrupts.cpp	/^void printf(char* str);$/;"	p	file:	signature:(char* str)
+printf	kernel.cpp	/^void printf(char* str)$/;"	f	signature:(char* str)
+programmableInterruptControllerMasterCommandPort	interrupts.h	/^            Port8BitSlow programmableInterruptControllerMasterCommandPort;$/;"	m	class:InterruptManager	access:protected
+programmableInterruptControllerMasterDataPort	interrupts.h	/^            Port8BitSlow programmableInterruptControllerMasterDataPort;$/;"	m	class:InterruptManager	access:protected
+programmableInterruptControllerSlaveCommandPort	interrupts.h	/^            Port8BitSlow programmableInterruptControllerSlaveCommandPort;$/;"	m	class:InterruptManager	access:protected
+programmableInterruptControllerSlaveDataPort	interrupts.h	/^            Port8BitSlow programmableInterruptControllerSlaveDataPort;$/;"	m	class:InterruptManager	access:protected
+reserved	interrupts.h	/^                uint8_t reserved;$/;"	m	struct:InterruptManager::GateDescriptor	access:public
+size	interrupts.h	/^                uint16_t size;$/;"	m	struct:InterruptManager::InterruptDescriptorTablePointer	access:public
+type	gdt.h	/^                    uint8_t type;$/;"	m	class:GlobalDescriptorTable::SegmentDescriptor	access:private
+uint16_t	types.h	/^    typedef unsigned short         uint16_t;$/;"	t
+uint32_t	types.h	/^    typedef unsigned int           uint32_t;$/;"	t
+uint64_t	types.h	/^    typedef unsigned long long int uint64_t;$/;"	t
+uint8_t	types.h	/^    typedef unsigned char           uint8_t;$/;"	t
+unusedSegmentSelector	gdt.h	/^            SegmentDescriptor unusedSegmentSelector;$/;"	m	class:GlobalDescriptorTable	access:private
+~GlobalDescriptorTable	gdt.cpp	/^GlobalDescriptorTable::~GlobalDescriptorTable()$/;"	f	class:GlobalDescriptorTable	signature:()
+~GlobalDescriptorTable	gdt.h	/^            ~GlobalDescriptorTable();$/;"	p	class:GlobalDescriptorTable	access:public	signature:()
+~InterruptManager	interrupts.cpp	/^InterruptManager::~InterruptManager()$/;"	f	class:InterruptManager	signature:()
+~InterruptManager	interrupts.h	/^            ~InterruptManager();$/;"	p	class:InterruptManager	access:public	signature:()
+~Port	port.cpp	/^Port::~Port()$/;"	f	class:Port	signature:()
+~Port	port.h	/^            ~Port();$/;"	p	class:Port	access:protected	signature:()
+~Port16Bit	port.cpp	/^Port16Bit::~Port16Bit()$/;"	f	class:Port16Bit	signature:()
+~Port16Bit	port.h	/^            ~Port16Bit();$/;"	p	class:Port16Bit	access:public	signature:()
+~Port32Bit	port.cpp	/^Port32Bit::~Port32Bit()$/;"	f	class:Port32Bit	signature:()
+~Port32Bit	port.h	/^            ~Port32Bit();$/;"	p	class:Port32Bit	access:public	signature:()
+~Port8Bit	port.cpp	/^Port8Bit::~Port8Bit()$/;"	f	class:Port8Bit	signature:()
+~Port8Bit	port.h	/^            ~Port8Bit();$/;"	p	class:Port8Bit	access:public	signature:()
+~Port8BitSlow	port.cpp	/^Port8BitSlow::~Port8BitSlow()$/;"	f	class:Port8BitSlow	signature:()
+~Port8BitSlow	port.h	/^            ~Port8BitSlow();$/;"	p	class:Port8BitSlow	access:public	signature:()
