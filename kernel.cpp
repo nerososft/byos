@@ -51,6 +51,52 @@ void printfHex(uint8_t key){
         printf(foo);
 }
 
+class PrintfKeyBoardEventHandler : public KeyboardEventHandler{
+public:
+    void OnKeyDown(char c){
+        char* foo = " ";
+        foo[0] = c;
+        printf(foo);
+    }
+};
+
+class MouseOnConsoleEventHandler : public MouseEventHandler{
+    int8_t x, y;
+public:
+    
+    MouseOnConsoleEventHandler(){
+    
+    }
+    
+    void OnActivate(){
+        uint16_t* VideoMemory = (uint16_t*)0xb8000;
+        x = 40;
+        y = 12;
+        VideoMemory[80*y+x] = (VideoMemory[80*y+x] & 0x0F00) << 4
+                            | (VideoMemory[80*y+x] & 0xF000) >> 4
+                            | (VideoMemory[80*y+x] & 0x00FF);
+    }
+    
+    
+    void OnMouseMove(int xoffset,int yoffset){
+         static uint16_t* VideoMemory = (uint16_t*)0xb8000;
+                VideoMemory[80*y+x] = (VideoMemory[80*y+x] & 0x0F00) << 4
+                                    | (VideoMemory[80*y+x] & 0xF000) >> 4
+                                    | (VideoMemory[80*y+x] & 0x00FF);
+
+                x += xoffset;
+                if(x >= 80) x = 79;
+                if(x < 0) x = 0;
+                y += yoffset;
+                if(y >= 25) y = 24;
+                if(y < 0) y = 0;
+
+                VideoMemory[80*y+x] = (VideoMemory[80*y+x] & 0x0F00) << 4
+                                    | (VideoMemory[80*y+x] & 0xF000) >> 4   
+                                    | (VideoMemory[80*y+x] & 0x00FF);
+    }
+};
+
 typedef void (*constructor)();
 extern "C" constructor start_ctors;
 extern "C" constructor end_ctors;
@@ -73,12 +119,14 @@ extern "C" void kernelMain(const void* multiboot_structure, uint32_t /*multiboot
     printf("Initializing Hardware... \n");
     
     DriverManager driverManager;
-        KeyboardDriver keyboard(&interrupts);
+        PrintfKeyBoardEventHandler kbHandler;
+        KeyboardDriver keyboard(&interrupts,&kbHandler);
         driverManager.AddDriver(&keyboard);
         
         printf("Keyboard Driver Initialized. \n");
         
-        MouseDriver mouse(&interrupts);
+        MouseOnConsoleEventHandler mshandler;
+        MouseDriver mouse(&interrupts,&mshandler);
         driverManager.AddDriver(&mouse);
         
         printf("Mouse Driver Initialized. \n");
